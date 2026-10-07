@@ -1,12 +1,22 @@
-import { createClient } from '@base44/sdk';
-import { appParams } from '@/lib/app-params';
+// Simple API client without Base44 dependency
+const apiClient = {
+  auth: {
+    me: async () => {
+      // Return a mock user or null
+      return null;
+    },
+    logout: () => {
+      localStorage.removeItem('authToken');
+    },
+    redirectToLogin: (url) => {
+      window.location.href = '/login';
+    }
+  },
+  app: {
+    getPublicSettings: async () => {
+      return { id: 'local', public_settings: {} };
+    }
+  }
+};
 
-const { appId, token, functionsVersion, appBaseUrl } = appParams;
-
-export const base44 = createClient({
-  appId,
-  token,
-  functionsVersion,
-  serverUrl: '',
-  appBaseUrl
-});
+export const base44 = apiClient;
