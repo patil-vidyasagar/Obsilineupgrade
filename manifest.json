@@ -1,19 +1,25 @@
-<!doctype html>
 <html lang="en">
   <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/public/obsiline-mark-200.png" />
+    <link rel="icon" type="image/png" href="https://media.base44.com/images/public/user_6abec6ebb1a885c892a10d01/111f9dd39_obsiline-mark-200.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   
+    <link rel="manifest" href="/manifest.json" />
     <title>OBSILINE — Building Intelligent Digital Growth</title>
     <meta name="description" content="Digital marketing, software development and IT support under one roof. Obsiline builds intelligent systems that help businesses grow." />
     <meta property="og:title" content="OBSILINE — Building Intelligent Digital Growth" />
     <meta property="og:description" content="We don't just build software. We build systems that help businesses grow." />
-    <meta property="og:image" content="/public/og-cover.png" />
+    <meta property="og:image" content="https://media.base44.com/images/public/user_6abec6ebb1a885c892a10d01/6356f7946_og-cover.png" />
     <meta name="theme-color" content="#0F172A" />
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <script type="module" src="/src/main.jsx?t=1791386820733"></script>
   </body>
 </html>
